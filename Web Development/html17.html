@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Updock&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Updock', cursive;
+        }
+
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(228, 183, 183);
+            margin: 33px auto;
+        }
+
+        .item{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(248, 238, 238);
+        }
+
+        #fruit
+        {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary{
+            float: left;
+            clear: both;
+            clear: left;
+            width: 48%;
+        }
+
+        #computer{
+            /* float: left; */
+            clear: left;
+            width: 99.%;
+        }
+
+        p, h3{
+            /* text-align: right; */
+            /* text-align: left; */
+            /* text-align: center; */
+            text-align: justify;
+        }
+
+        h1{
+            margin: 25px auto;
+            width: 500px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+        <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, harum. Nam fugiat cupiditate sapiente provident aliquid similique quibusdam et incidunt ipsa. Quas, voluptate? Nisi officia soluta tempora sunt saepe eum vel, eos rerum id sit ex dolores libero asperiores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quae non culpa eligendi praesentium odio et molestias expedita veritatis, in nam esse sit enim cum voluptates numquam ex ducimus incidunt dolorum similique? Culpa ipsum magni laboriosam. Deleniti, inventore ut?</p>
+        </div>
+        
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore corporis, impedit ab sed tempore numquam atque eveniet esse nesciunt consectetur, temporibus hic sint cumque. Debitis autem alias laborum, non dolores totam enim, voluptatem ad omnis, velit neque hic Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti sequi praesentium architecto odio quo ullam possimus obcaecati adipisci, soluta alias quam modi! Molestias in blanditiis aperiam atque tempore. Mollitia, atque aliquam! Veritatis reiciendis esse alias dolor quisquam earum accusamus!</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sed modi dicta, expedita dolor id incidunt deserunt natus ut sunt numquam debitis aliquam doloribus ipsam velit magni libero! Quis cupiditate odio aut aliquam tempore necessitatibus voluptatem iste ea consequuntur.</p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque accusantium dolorum ipsa ipsam rerum cum voluptas repellat distinctio fugiat, veniam, saepe molestiae consequatur repellendus sit tempora impedit dolores eaque totam cumque iusto molestias, quod quis necessitatibus aperiam? Eius, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ratione voluptatum omnis delectus facilis quod iure reiciendis mollitia dolore vero numquam consequatur distinctio assumenda vitae odit recusandae architecto asperiores voluptas in, soluta ullam amet. Iure exercitationem ad ipsa. Nostrum. Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

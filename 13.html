@@ -1,0 +1,52 @@
+<html> 
+ 
+<head> 
+ 
+<script> function largest() 
+{ 
+ 
+var num1, num2, num3; 
+ 
+num1 = Number(document.getElementById("N").value); num2 = Number(document.getElementById("M").value); num3 = Number(document.getElementById("O").value); if(num1>num2 && num1>num3) 
+{ 
+ 
+document.getElementById('rst').innerText=num1+" is large"; 
+ 
+} 
+ 
+else if(num2>num1 && num2>num3) 
+ 
+{ 
+ 
+document.getElementById('rst').innerText=num2+" is large"; 
+ 
+} 
+ 
+else if(num3>num1 && num3>num1) 
+ 
+{ 
+ 
+document.getElementById('rst').innerText=num3+" is large"; 
+} 
+)
+</script> 
+</head> 
+<body style="background-color:black; color:white;"> 
+<h1>Calculate highest among three numbers</h1> 
+ 
+<hr color="white"> 
+ 
+<br> 
+ 
+Enter 1<sup>st</sup> number: <input type="text" id="N"></input><br> 
+Enter 2<sup>nd</sup> number: <input type="text" id="M"></input><br> 
+Enter 3<sup>rd</sup> number: <input type="text" id="O"></input><br> <br> 
+<p id="rst"></p> 
+ 
+<hr color="white"> 
+ 
+<center><button onclick="largest()">OK</button> 
+ 
+</body> 
+ 
+</html> 

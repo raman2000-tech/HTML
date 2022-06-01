@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid red; */
+        background-color: burlywood;
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+        /* box-shadow: -10px -13px grey; */
+        /* box-shadow: 10px 13px grey; */
+        box-shadow: 7px 5px 10px grey;
+        /*(10px is blur radius)*/
+        /* box-shadow: -7px -5px 10px 14px grey; */
+        /* box-shadow: -7px -5px 10px 34px rgba(71, 172, 172, 0.5); */
+        box-shadow: inset 3px 5px grey;
+        box-shadow: 3px 5px grey, 4px 6px black;
+    }
+    .card h2{
+        /* text-shadow: 3px 4px white; */
+        /* text-shadow: 3px 4px 2px white; */
+        text-shadow: 3px 4px 2px white;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>I have started C++ course which does not mean that we will stop this course. we wiil continue this course to completion. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam maiores obcaecati sed, vitae quia, ea, enim fugiat magni aut natus voluptatem. Tempora, atque deleniti dolore nostrum error aspernatur nihil velit quaerat magnam, sequi numquam.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat facilis qui eaque soluta laborum consequuntur adipisci iste ullam nam cum sint, dolor velit. Saepe, eveniet tempore harum error odit nam modi officiis excepturi expedita?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi veritatis, quaerat harum non nam ex soluta sapiente optio incidunt delectus, asperiores at nostrum, repellendus culpa iure fugit magni quod provident qui. Recusandae, eum illum.</p>
+        </div>
+    </div>
+</body>
+</html>

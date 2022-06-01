@@ -1,0 +1,38 @@
+<!--(a) WAP to find highest values from given three value -->
+
+<html>
+<head>
+<script>
+function highest()
+{
+var val1, val2, val3;
+val1 = Number(document.getElementById("N").value);
+val2 = Number(document.getElementById("M").value);
+val3 = Number(document.getElementById("O").value);
+if(val1>val2 && val1>val3)
+{
+document.getElementById('est').innerText=val1+" is highest";
+}
+else if(val2>val1 && val2>val3)
+{
+document.getElementById('est').innerText=val2+" is highest";
+}
+else if(val3>val1 && val3>val1)
+{
+document.getElementById('est').innerText=val3+" is highest";
+}
+}
+</script>
+</head>
+<body style="background-color:Blue; color:yellowgreen;">
+<h1>Highest Value from given three value</h1>
+<hr color="white">
+<br>
+Enter 1<sup>st</sup> number: <input type="text" id="N"></input><br>
+Enter 2<sup>nd</sup> number: <input type="text" id="M"></input><br>
+Enter 3<sup>rd</sup> number: <input type="text" id="O"></input><br> <br>
+<p id="est"></p>
+<hr color="white">
+<center><button onclick="highest()">OK</button>
+</body>
+</html>

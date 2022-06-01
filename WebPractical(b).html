@@ -1,0 +1,36 @@
+<!--WAP to perform given no. is palindrome-->
+
+<html>
+<head>
+<script>
+function Palindrome()
+{
+var rem, temp, final = 0;
+var number = Number(document.getElementById("N").value);
+temp = number;
+while(number>0)
+{
+rem = number%10;
+number = parseInt(number/10);
+final = final*10+rem;
+}
+if(final==temp)
+{
+window.alert("The input number is Palindrome");
+}
+else
+{
+window.alert("The input number is not Palindrome");
+}
+}
+</script>
+</head>
+<body style="background-color:blue; color:yellowgreen;">
+<br>
+<h1>Given no. is palindrome or not</h1>
+Enter The Number :<input type="text" name="n" id = "N"/>
+<hr color="white">
+<br>
+<center><button onClick="Palindrome()">CHECK</button>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid + Media Queries</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      @media only screen and (max-width: 300px) {
+        body {
+          background-color: red;
+        }
+        .container {
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+      }
+      @media only screen and (min-width: 300px) and (max-width: 500px) {
+        body {
+          background-color: blue;
+        }
+        .container {
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+      }
+      @media (min-width: 500px) and (max-width: 880px) {
+        body {
+          background-color: yellow;
+        }
+        .container {
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+      }
+      @media (min-width: 880px) {
+        body {
+          background-color: green;
+        }
+      }
+      .bdr {
+        border: 2px solid black;
+        padding: 3px;
+        background-color: wheat;
+      }
+      nav {
+        grid-area: navbar;
+      }
+      section {
+        grid-area: section;
+      }
+      aside {
+        grid-area: aside;
+      }
+      footer {
+        grid: footer;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <nav class="bdr">
+            <span1>Home</span1>
+            <span2>About</span2>
+            <span3>Services</span3>
+            <span4>Contact</span4>
+        </nav>
+      <nav class="bdr">Home About Contact</nav>
+      <section class="bdr">
+        <h2>Learn CSS in Hindi</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam necessitatibus provident tempora laudantium quibusdam! Sapiente id ducimus incidunt, necessitatibus eos commodi possimus dolorem recusandae, deleniti vitae enim illo omnis ut numquam unde facere porro molestias amet rem libero asperiores! Nostrum error sint et iusto repellendus voluptate rem cupiditate, illum obcaecati suscipit alias voluptas atque explicabo, excepturi non earum in? Architecto, quibusdam quia sit repudiandae possimus, nihil fugiat, nemo consectetur tempore facilis enim suscipit eos praesentium placeat rerum sint eius iusto molestiae ut ratione earum quam. Repudiandae pariatur magnam corrupti perferendis quisquam est quae magni optio voluptatem impedit, voluptatum modi reprehenderit assumenda beatae voluptates aliquid libero tempora quas? Odit laudantium est, optio, nihil voluptates id deleniti sed voluptatum aliquid ratione obcaecati, itaque temporibus veniam numquam vitae beatae quibusdam possimus modi atque?</p>
+      </section>
+      <aside class="bdr">
+        <h1>More About Us</h1>
+      </aside>
+    </div>
+    <footer class="bdr">Copyright Codethon 2022</footer>
+  </body>
+</html>

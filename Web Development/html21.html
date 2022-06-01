@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Tutorial</title>
+    <style>
+        .container{
+            border: 2px solid brown;
+            background-color: lightgreen;
+            height: 3444px;
+        }
+
+        /* CSS Position: static (default), relative, absolute, fixed, sticky */
+
+        .box{
+            display: inline-block;
+            border: 2px solid blue;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        /* sticky: Position the element relative to the users scroll position 
+        #box1{
+            position: sticky;
+            top: 3px;
+        } */
+
+        /* fixed: Position the element relative to the browser window */
+        /* #box3{
+            position: fixed;
+            right: 4px;
+            bottom: 2px;
+        } */
+
+        /* absolute: Positions the element relative to the position of its first parent
+        #box4{
+            position: absolute;
+            top: 34px;
+            left: 134px;
+        } */
+
+        /* relative: Positions the element relative to its normal position and will leave a gap as its normal position
+        #box2{
+            position: relative;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

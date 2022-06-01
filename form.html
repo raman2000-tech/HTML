@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+           <center><h1>
+                Registeration Form
+            </h1>
+            <p>
+                Please Register yourself to create an account
+            </p></center> 
+            <hr>
+            <div class="firstname">
+                <label>First Name<SUP>*</SUP> </label>
+                <input type="text" name="Firstname" placeholder="First Name" required>
+            </div>
+            <div class="lastname">
+                <label>Last Name<sup>*</sup> </label>
+                <input type="text" name="Lastname" placeholder="Last Name" required>
+            </div>
+            <div class="course">
+                <label>Course:<sup>*</sup> </label>
+                <select>
+                    <option value="Course">Course</option>  
+                    <option value="BCA">BCA</option>  
+                    <option value="BBA">BBA</option>  
+                    <option value="B.Tech">B.Tech</option>  
+                    <option value="MBA">MBA</option>  
+                    <option value="MCA">MCA</option>  
+                    <option value="M.Tech">M.Tech</option>
+                </select>
+            </div><br>
+            <div class="gender">
+                <label>Gender: </label>
+                <br>
+                <input type="radio" value="Male" name="gender" checked > Male 
+                <input type="radio" value="Female" name="gender"> Female  
+                <input type="radio" value="Other" name="gender"> Other
+            </div><br>
+            <div class="phone">
+                <label>
+                    Phone Number:<sup>*</sup>
+                </label>
+                <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>
+                <input type="text" name="phone" placeholder="phone no." size="10"/ required>
+            </div>
+            <div class="email">
+                <label>Email<sup>*</sup></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            </div>
+            <div class="password">
+                <label>Password<sup>*</sup></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+            </div>
+                <button type="submit" class="registerbtn">Register</button>
+                <button type="reset" class="resetbtn">Reset</button>
+                <div class="area" >
+                    <ul class="circles">
+                        <div class="container">
+                            <div class="card">
+                              <h1 class="title">Designed For Work</h1>
+                              <p class="subtitle">Introducing the first ever 5G enabled tablet. You've got a tablet that
+                                let's you play harder and work smarter.</p>
+                              <button class="btn">Get Started</button>
+                            </div>
+                            <div class="blob"></div>
+                          </div>
+            </div >
+            </div>
+        </form>
+    </div>
+</body>
+</html>
